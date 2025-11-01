@@ -10,7 +10,7 @@ Step 2 – GPT API 기반 서술형 채점 + 피드백 (점수 미사용)
 import streamlit as st
 
 # ── 1. 수업 제목 ──
-st.title("집 가고 싶어.")  # ← 교과별 제목으로 자유롭게 수정하세요.
+st.title("보일 법칙 평가")  # ← 교과별 제목으로 자유롭게 수정하세요.
 
 # ── 2. 학번 입력 ──
 student_id = st.text_input("학번", help="학생의 학번을 작성하세요. (예: 10130)")
@@ -114,4 +114,5 @@ if st.button("GPT 피드백 확인"):
         st.write(fb)
 
     st.success("모든 피드백이 생성되었습니다. 교사 확인 후 학생에게 전달하세요.")
+
 
